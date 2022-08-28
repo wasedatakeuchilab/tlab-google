@@ -13,7 +13,7 @@ exclude = ["conftest.py"]
 python = "~3.10"
 google-auth = "^2.10.0"
 google-auth-oauthlib = "^0.5.2"
-google-api-python-client = "^2.57.0"
+google-api-python-client = "^2.58.0"
 
 
 [tool.poetry.dev-dependencies]
