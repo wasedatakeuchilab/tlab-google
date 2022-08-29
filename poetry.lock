@@ -176,7 +176,7 @@ uritemplate = ">=3.0.1,<5"
 
 [[package]]
 name = "google-auth"
-version = "2.10.0"
+version = "2.11.0"
 description = "Google Authentication Library"
 category = "main"
 optional = false
@@ -636,7 +636,7 @@ testing = ["coverage (>=6.2)", "coverage-enable-subprocess (>=1)", "flaky (>=3.7
 [metadata]
 lock-version = "1.1"
 python-versions = "~3.10"
-content-hash = "d24ad2a1261b27fe18a88ac35120c0e2454ed06552f0b73345e8852a27ebf7f8"
+content-hash = "9ed6ed0d67d73cab241c8f77711f8168872f61bf8052859fae206aba133cc561"
 
 [metadata.files]
 atomicwrites = [
@@ -768,8 +768,8 @@ google-api-python-client = [
     {file = "google_api_python_client-2.58.0-py2.py3-none-any.whl", hash = "sha256:8f4eeed1b46f3f445307719aa3e9678e429d90c0af4f22ada707a72ba10fe02d"},
 ]
 google-auth = [
-    {file = "google-auth-2.10.0.tar.gz", hash = "sha256:7904dbd44b745c7323fef29565adee2fe7ff48473e2d94443aced40b0404a395"},
-    {file = "google_auth-2.10.0-py2.py3-none-any.whl", hash = "sha256:1deba4a54f95ef67b4139eaf5c20eaa7047215eec9f6a2344599b8596db8863b"},
+    {file = "google-auth-2.11.0.tar.gz", hash = "sha256:ed65ecf9f681832298e29328e1ef0a3676e3732b2e56f41532d45f70a22de0fb"},
+    {file = "google_auth-2.11.0-py2.py3-none-any.whl", hash = "sha256:be62acaae38d0049c21ca90f27a23847245c9f161ff54ede13af2cb6afecbac9"},
 ]
 google-auth-httplib2 = [
     {file = "google-auth-httplib2-0.1.0.tar.gz", hash = "sha256:a07c39fd632becacd3f07718dfd6021bf396978f03ad3ce4321d060015cc30ac"},
