@@ -1,5 +1,6 @@
 import base64
 import typing as t
+from collections import abc
 from email.mime import text
 from unittest import mock
 
@@ -10,7 +11,7 @@ from tlab_google import credentials, gmail
 
 
 @pytest.fixture(autouse=True)
-def build_service_mock() -> t.Generator[mock.Mock, None, None]:
+def build_service_mock() -> abc.Generator[mock.Mock, None, None]:
     with mock.patch("tlab_google.utils.build_service") as m:
         yield m
 

@@ -4,14 +4,14 @@ This module provides fixtures for doctests.
 Note that this file will NOT be included when installed.
 """
 import base64
-import typing as t
+from collections import abc
 from unittest import mock
 
 import pytest
 
 
 @pytest.fixture(autouse=True)
-def from_client_config_mock() -> t.Generator[mock.Mock, None, None]:
+def from_client_config_mock() -> abc.Generator[mock.Mock, None, None]:
     """
     For tlab_google.credentials.new_credentials
     """
@@ -22,7 +22,7 @@ def from_client_config_mock() -> t.Generator[mock.Mock, None, None]:
 
 
 @pytest.fixture(autouse=True)
-def from_authorized_user_file_mock() -> t.Generator[mock.Mock, None, None]:
+def from_authorized_user_file_mock() -> abc.Generator[mock.Mock, None, None]:
     """
     For tlab_google.credentials.load_credentials
     """
@@ -35,7 +35,7 @@ def from_authorized_user_file_mock() -> t.Generator[mock.Mock, None, None]:
 
 
 @pytest.fixture(autouse=True)
-def build_service_mock() -> t.Generator[mock.Mock, None, None]:
+def build_service_mock() -> abc.Generator[mock.Mock, None, None]:
     """
     For all google api
     """
