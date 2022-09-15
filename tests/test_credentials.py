@@ -1,5 +1,5 @@
 import os
-import typing as t
+from collections import abc
 from unittest import mock
 
 import pytest
@@ -22,7 +22,7 @@ def scopes(request: FixtureRequest[str]) -> list[str]:
 
 
 @pytest.fixture()
-def from_client_config_mock() -> t.Generator[mock.Mock, None, None]:
+def from_client_config_mock() -> abc.Generator[mock.Mock, None, None]:
     with mock.patch(
         "google_auth_oauthlib.flow.InstalledAppFlow.from_client_config"
     ) as m:
@@ -91,7 +91,7 @@ def test_new_credentials_run_local_server(
 
 
 @pytest.fixture()
-def from_authorized_user_file_mock() -> t.Generator[mock.Mock, None, None]:
+def from_authorized_user_file_mock() -> abc.Generator[mock.Mock, None, None]:
     with mock.patch(
         "google.oauth2.credentials.Credentials.from_authorized_user_file"
     ) as m:
