@@ -7,7 +7,7 @@ from tlab_google import abstract
 
 def build_service(api: abstract.AbstractAPI, **kwargs: t.Any) -> t.Any:
     """
-    Construct a Resource for interacting with an API.
+    Constructs a Resource for interacting with an API.
 
     Parameters
     ----------
