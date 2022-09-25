@@ -30,7 +30,7 @@ def new_credentials(
     run_local_server: bool = True,
 ) -> Credentials:
     """
-    Create a new Credentials instance for Google API.
+    Creates a new Credentials instance for Google API.
 
     Parameters
     ----------
@@ -63,7 +63,7 @@ def load_credentials(
     filepath: str | os.PathLike[str], scopes: list[str]
 ) -> Credentials:
     """
-    Create a Credentials instance for Google API from an authorized user json file.
+    Creates a Credentials instance for Google API from an authorized user json file.
 
     Parameters
     ----------
@@ -118,7 +118,7 @@ class Credentials:
 
     def save(self, filepath: str | os.PathLike[str]) -> None:
         """
-        Save a Credentials instance as a json file.
+        Saves a Credentials instance as a json file.
 
         Parameters
         ----------
@@ -130,6 +130,6 @@ class Credentials:
 
     def refresh(self) -> None:
         """
-        Refresh the access token.
+        Refreshes the access token.
         """
         self._credentials.refresh(requests.Request())

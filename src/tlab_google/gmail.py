@@ -91,7 +91,7 @@ class GmailAPI(abstract.AbstractAPI):
         include_spam_trash: bool = False,
     ) -> tuple[list[Message], str, int]:
         """
-        Get a list of messages in the user's mailbox on Gmail.
+        Gets a list of messages in the user's mailbox on Gmail.
 
         Parameters
         ----------
@@ -109,7 +109,7 @@ class GmailAPI(abstract.AbstractAPI):
         Returns
         -------
         messages : list[tlab_google.gmail.Message]
-            A list of messages.
+            A list of Message objects.
             See also https://developers.google.com/gmail/api/reference/rest/v1/users.messages#Message for Message.
         next_page_token : str
             An token to retrieve the next page.
@@ -145,7 +145,7 @@ class GmailAPI(abstract.AbstractAPI):
         self, id: str, format: t.Literal["minimal", "full", "raw", "metadata"] = "full"
     ) -> Message:
         """
-        Get a message in the mailbox of Gmail.
+        Gets a message in the mailbox of Gmail.
 
         Parameters
         ----------
@@ -158,6 +158,7 @@ class GmailAPI(abstract.AbstractAPI):
         Returns
         -------
         tlab_google.gmail.Message
+            A Message objects.
             See also https://developers.google.com/gmail/api/reference/rest/v1/users.messages#Message for Message.
 
         See Also
@@ -174,7 +175,7 @@ class GmailAPI(abstract.AbstractAPI):
 
     def send_message(self, message: mimebase.MIMEBase) -> None:
         """
-        Send a message via Gmail.
+        Sends a message via Gmail.
 
         Parameters
         ----------
@@ -188,7 +189,7 @@ class GmailAPI(abstract.AbstractAPI):
 
     def get_signature(self, address: str | None = None) -> str:
         """
-        Get a signature registered on Gmail.
+        Gets a signature registered on Gmail.
 
         Parameters
         ----------

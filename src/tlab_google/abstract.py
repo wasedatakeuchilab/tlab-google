@@ -26,7 +26,7 @@ class AbstractAPI(abc.ABC):
     @abc.abstractmethod
     def get_default_scopes(cls) -> list[str]:
         """
-        Get the default scopes for the Google API.
+        Gets the default scopes for the Google API.
 
         Returns
         -------
