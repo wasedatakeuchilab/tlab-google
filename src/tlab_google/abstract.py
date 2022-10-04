@@ -12,7 +12,7 @@ class AbstractAPI(abc.ABC):
 
     credentials: credentials.Credentials
     """Credentials for the Google API."""
-    version: str | None = None
+    version: str = ""
     """The version of the Google API."""
 
     @property
